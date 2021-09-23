@@ -341,13 +341,17 @@ section .title::after{
 
 .project-row {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, 33.333333333333333333333333333333%);
+    grid-gap: 1px;
+    background-color: white;
 }
 
 .project-row .project {
-    justify-self: center;
     padding-top: 25px;
     padding-bottom: 25px;
+    background-color: black;
+    width: 100%;
+    text-align: center;
 }
 
 .project-row .project .project-title {
@@ -390,13 +394,6 @@ section .title::after{
     background : black;
 }
 
-
-.projects .project-row .sharebnb-project {
-    padding-left: 15%;
-    padding-right: 15%;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-}
 .projects .project-row .fontawesome-icons {
     text-align: center;
 }
@@ -406,10 +403,10 @@ section .title::after{
 }
 
 .projects .project-row .fontawesome-icons i {
-    font-size: 45px;
+    font-size: 33px;
 }
 .projects .project-row .fontawesome-icons .fa-link {
-    font-size: 40px;
+    font-size: 28px;
 }
 
 .projects .project-row .fontawesome-icons i:hover {
