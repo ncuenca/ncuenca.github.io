@@ -16,6 +16,7 @@
     font-family : 'Ubuntu', 'sans-serif';
     padding : 15px 0;
     transition : all 0.3s ease;
+    z-index: 1;
 }
 
 .navbar.scrolled {
@@ -336,4 +337,82 @@ section .title::after{
     height: 3px;
     background: #FFF;
     transform: translateX(-50%);
+}
+
+.project-row {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+
+.project-row .project {
+    justify-self: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.project-row .project .project-title {
+    color : #FFF;
+    font-family : 'Ubuntu', 'sans-serif';
+    text-align: center;
+    
+}
+.projects p{
+    color : #FFF;
+    font-family : 'Ubuntu', 'sans-serif';
+    text-align: center;
+    font-style: italic;
+}
+
+
+.project-row img {
+    height: 180px;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 6px;
+}
+
+.projects .demo-credentials {
+    margin-bottom: 10px;
+}
+.projects .demo-credentials p {
+    color : #FFF;
+    font-family : 'Ubuntu', 'sans-serif';
+    text-align: center;
+}
+
+.projects .demo-credentials .title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.projects .demo-credentials .title::after{
+    content: "demo credentials";
+    background : black;
+}
+
+
+.projects .project-row .sharebnb-project {
+    padding-left: 15%;
+    padding-right: 15%;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+.projects .project-row .fontawesome-icons {
+    text-align: center;
+}
+
+.projects .project-row .fontawesome-icons p {
+    display: inline;
+}
+
+.projects .project-row .fontawesome-icons i {
+    font-size: 45px;
+}
+.projects .project-row .fontawesome-icons .fa-link {
+    font-size: 40px;
+}
+
+.projects .project-row .fontawesome-icons i:hover {
+    color: crimson;
+    cursor: pointer;
 }

@@ -1,14 +1,14 @@
 $(document).ready(function () {
     var typed = new Typed(".typing", {
-        strings : ["Developer"],
-        typeSpeed : 100,
-        backSpeed : 60,
+        strings : ["Full Stack Engineer", "React Developer", "Frontend Developer", "Backend Developer"],
+        typeSpeed : 50,
+        backSpeed : 20,
         loop : true
     });
     var typed = new Typed(".typing-2", {
-        strings : ["Developer"],
-        typeSpeed : 100,
-        backSpeed : 60,
+        strings : ["Full Stack Engineer", "React Developer", "Frontend Developer", "Backend Developer"],
+        typeSpeed : 50,
+        backSpeed : 20,
         loop : true
     });
 });

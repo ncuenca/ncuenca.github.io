@@ -6,8 +6,8 @@
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <title>Portfol.io</title>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <link rel = "stylesheet" href = "style.css">
-   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src = "script.js"></script>
@@ -31,7 +31,7 @@
 
     <section class = "home" id = "home">
         <div class = "max-width">
-            <div class = "text-4">IMAGE OR LOGO PLACEHOLDER</div>
+            <!-- <div class = "text-4">IMAGE OR LOGO PLACEHOLDER</div> -->
             <div class = "home-content">
                 <div class = "text-1">Hello, my name is</div>
                 <div class = "text-2">Nathaniel Cuenca</div>
@@ -57,10 +57,47 @@
     </section>
 
 
-    <section class = "projects" id = "projects">
-        <div class = "max-width">
-            <h2 class = "title">Projects</h2>
-            <div class = "title-content"></div>
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">Projects</h2>
+            <div class="title-content"></div>
+            <div class="row project-row">
+                <div class="jobly-project project">
+                    <h2 class="project-title">Jobly</h2>
+                    <p>A full stack job application website</p>
+                    <img src="jobly-screenshot.png">
+                    <div class="fontawesome-icons">
+                        <p><i class="fas fa-link"></i></p>
+                        <p><i class="fab fa-github-square"></i></p>
+                    </div>
+                </div>
+                <div class="sharebnb-project project">
+                    <h2 class="project-title">ShareBnB</h2>
+                    <p>A full stack Airbnb clone</p>
+                    <img src="sharebnb-screenshot.png">
+                    <div class="fontawesome-icons">
+                        <p><i class="fas fa-link"></i></p>
+                        <p><i class="fab fa-github-square"></i></p>
+                    </div>
+                    
+                </div>
+                <div class="warbler-project project">
+                    <h2 class="project-title">Warbler</h2>
+                    <p>A full stack Twitter clone</p>
+                    <img src="warbler-screenshot.png">
+                    <div class="fontawesome-icons">
+                        <p><i class="fas fa-link"></i></p>
+                        <p><i class="fab fa-github-square"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-credentials">
+                <h2 class="title"></h2>
+                <div class="title-content"></div>
+                <p>shelleyzhang</p>
+                <p>password</p>
+            </div>
+            <p>***These websites take ~30 seconds upon first load because of their Heroku deployed backends</p>
         </div>
 
     </section>
