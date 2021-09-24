@@ -11,6 +11,23 @@ $(document).ready(function () {
         backSpeed : 20,
         loop : true
     });
+
+    $("#frontend-icon").hover(
+        function() {
+            changeFendorbend("(frontend)");
+        },
+        function() {
+            changeFendorbend("---");
+        }
+    );
+    $("#backend-icon").hover(
+        function() {
+            changeFendorbend("(backend)");
+        },
+        function() {
+            changeFendorbend("---");
+        }
+    );
 });
 
 function scrollFunction() {
@@ -20,6 +37,15 @@ function scrollFunction() {
     else {
         document.getElementsByClassName("navbar")[0].classList.remove("scrolled");
     }
+}
+
+function changeFendorbend(text) {
+    if (text==="---") {
+        $("#fendorbend").css({'color':'black'})
+    } else {
+        $("#fendorbend").css({'color':'crimson'})
+    }
+    $("#fendorbend").text(text);
 }
 
 window.onscroll = scrollFunction;

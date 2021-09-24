@@ -320,20 +320,9 @@ section .title::after{
     cursor: pointer;
 }
 
-.projects .project-row .fontawesome-icons .item {
-    display: inline;
+#fendorbend {
+    color: black;
 }
-
-.projects .sharebnb-project .fontawesome-icons .item:hover  p.frontend:after {
-    content: ' (frontend) ';
-    color: crimson;
-}
-
-.projects .sharebnb-project .fontawesome-icons .item:hover  p.backend:after  {
-    content: ' (backend)';
-    color: crimson;
-}
-
 
 .contact .title::after{
     content: "get in touch";
