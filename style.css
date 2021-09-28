@@ -302,7 +302,9 @@ section .title::after{
     text-align: center;
 }
 
-.projects .project-row .fontawesome-icons p {
+
+.projects .project-row .fontawesome-icons a {
+    color: white;
     display: inline;
 }
 
@@ -337,12 +339,13 @@ section .title::after{
     font-size: 33px;
 }
 
-.contact .fontawesome-icons p {
+.contact .fontawesome-icons a {
     display: inline;
     font-size: 22px;
+    color: black;
 }
 
-.contact .fontawesome-icons p:hover {
+.contact .fontawesome-icons a:hover {
     color: crimson;
     cursor: pointer;
 }
