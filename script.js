@@ -1,3 +1,21 @@
+// const togBtn = document.getElementById('toggle-btn');
+// const shape = document.getElementById('shape');
+
+// togBtn.addEventListener('click', () => {
+//     // for detecting the class of shape element 
+
+//     var attr = shape.getAttributeNode("class").value;
+
+//     if(attr == 'cube'){
+//         shape.classList.replace('cube','ring');
+//     }
+//     else if(attr == 'ring'){
+//         shape.classList.replace('ring','cube');
+//     }
+
+//     togBtn.classList.toggle('active');
+// });
+
 $(document).ready(function () {
     var typed = new Typed(".typing", {
         strings : ["Full Stack Engineer", "React Developer", "Frontend Developer", "Backend Developer"],
@@ -28,6 +46,19 @@ $(document).ready(function () {
             changeFendorbend("---");
         }
     );
+
+    $("#toggle-btn").click(
+        function () {
+            if ($("#shape").attr("class") === "cube") {
+                $("#shape").addClass("ring")
+                $("#shape").removeClass("cube");
+            } else {
+                $("#shape").addClass("cube")
+                $("#shape").removeClass("ring");
+            }
+            $("#toggle-btn").toggleClass("active");
+        }
+    )
 });
 
 function scrollFunction() {
@@ -49,5 +80,6 @@ function changeFendorbend(text) {
 }
 
 window.onscroll = scrollFunction;
+
 
 

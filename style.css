@@ -84,6 +84,18 @@
     flex-direction : column;
 }
 
+.home .home-row {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.home .home-row .home-row-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
 .home .max-width {
     margin : auto 0 auto 40px;
 }
@@ -349,3 +361,165 @@ section .title::after{
     color: crimson;
     cursor: pointer;
 }
+
+
+#toggle-btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    border-radius: 50%;
+    z-index : 100;
+}
+  
+  .active#toggle-btn{
+    background-color: crimson;
+  }
+  
+  #shape{
+    position: relative;
+    top: 20%;
+    width: 4em;
+    height: 4em;
+    animation: spin 8s infinite linear;
+    transform-style: preserve-3d;
+  }
+  
+  @keyframes spin {
+    from{
+      transform: rotateY(0);
+    }
+    to{
+      transform: rotateY(-360deg);
+    }
+  }
+  
+.cube .face {
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: transform 2s, opacity 2s;
+}
+
+  .cube .one{
+    opacity: 0.5;
+    transform: scale3d(1.2, 1.2, 1.2) rotateX(90deg) translateZ(2em);
+  }
+  .cube .two{
+    opacity: 0.5;
+    transform: scale3d(1.2, 1.2, 1.2) translateZ(2em);
+  }
+  .cube .three{
+    opacity: 0.5;
+    transform: scale3d(1.2, 1.2, 1.2) rotateY(90deg) translateZ(2em);
+  }
+  .cube .four{
+    opacity: 0.5;
+    transform: scale3d(1.2, 1.2, 1.2) rotateY(180deg) translateZ(2em);
+  }
+  .cube .five{
+    opacity: 0.5;
+    transform: scale3d(1.2, 1.2, 1.2) rotateY(-90DEG) translateZ(2em);
+  }
+  .cube .six{
+    opacity: 0.5;
+    transform: scale3d(1.2, 1.2, 1.2) rotateX(-90deg) translateZ(2em) rotate(180deg);
+  }
+  
+  .cube .seven{
+    transform: scale3d(0.8, 0.8, 0.8) rotateX(90deg) translateZ(2em);
+  }
+  .cube .eight{
+    transform: scale3d(0.8, 0.8, 0.8) translateZ(2em);
+  }
+  .cube .nine{
+    transform: scale3d(0.8, 0.8, 0.8) rotateY(90deg) translateZ(2em);
+  }
+  .cube .ten{
+    transform: scale3d(0.8, 0.8, 0.8) rotateY(180deg) translateZ(2em);
+  }
+  .cube .eleven{
+    transform: scale3d(0.8, 0.8, 0.8) rotateY(-90DEG) translateZ(2em);
+  }
+  .cube .twelve{
+    transform: scale3d(0.8, 0.8, 0.8) rotateX(-90deg) translateZ(2em) rotate(180deg);
+  }
+  
+  /* -------------------ring------------------------- */
+  
+.ring .face {
+    color: crimson;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: transform 2s, opacity 2s;
+}
+
+  .ring .one{
+    transform: translateZ(7.6em);
+  }
+  .ring .two{
+    transform: rotateY(30deg) translateZ(7.6em);
+  }
+  .ring .three{
+    transform: rotateY(60deg) translateZ(7.6em);
+  }
+  .ring .four{
+    transform: rotateY(90deg) translateZ(7.6em);
+  }
+  .ring .five{
+    transform: rotateY(120deg) translateZ(7.6em);
+  }
+  .ring .six{
+    transform: rotateY(150deg) translateZ(7.6em);
+  }
+  .ring .seven{
+    transform: rotateY(180deg) translateZ(7.6em);
+  }
+  .ring .eight{
+    transform: rotateY(210deg) translateZ(7.6em);
+  }
+  .ring .nine{
+    transform: rotateY(-120deg) translateZ(7.6em);
+  }
+  .ring .ten{
+    transform: rotateY(-90deg) translateZ(7.6em);
+  }
+  .ring .eleven{
+    transform: rotateY(300deg) translateZ(7.6em);
+  }
+  .ring .twelve{
+    transform: rotateY(330deg) translateZ(7.6em);
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    *{
+      font-size: 35px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    *{
+      font-size: 20px;
+    }
+  }
